@@ -1,0 +1,7 @@
+pageObjects\GmailSigninPage.class
+pageObjects\GmailHomePage.class
+pageObjects\SearchResults.class
+resources\base.class
+resources\ExcelClass.class
+pageObjects\ErrorPage.class
+pageObjects\SearchPage.class
