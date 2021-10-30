@@ -5,3 +5,4 @@ resources\base.class
 resources\ExcelClass.class
 pageObjects\ErrorPage.class
 pageObjects\SearchPage.class
+resources\PropertyValues.class

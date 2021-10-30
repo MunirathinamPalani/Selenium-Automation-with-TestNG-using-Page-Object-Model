@@ -1,11 +1,8 @@
 package resources;
-
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,31 +15,24 @@ public class base {
 	public Properties prop;
 public WebDriver initializeDriver() throws IOException
 {
-	prop= new Properties();
-	FileInputStream fis=new FileInputStream("C:\\Study\\Eclipse Project Files\\Selenium-Automation-Projects\\src\\main\\java\\resources\\data.properties");
-	prop.load(fis);
-	String browserName=prop.getProperty("browser");
-	
-
-if(browserName.equals("chrome"))
+	String Name=PropertyValues.Browser("browser");
+if(Name.equals("chrome"))
 {
 	System.setProperty("webdriver.chrome.driver", "C:\\Study\\Driver\\chromedriver.exe");
 	driver= new ChromeDriver();
 }
-else if (browserName.equals("firefox"))
+else if (Name.equals("firefox"))
 {
 	 driver= new FirefoxDriver();
 }
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 return driver;
 }
-/*public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
-{
-	String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-	FileUtils.copyFile(source,new File(destinationFile));
-	return destinationFile;
 
+/*public void waiting(WebElement) {
+	WebDriverWait wait=new WebDriverWait(driver,20);
+	wait.until(ExpectedConditions.elementToBeClickable(WebElement));
 }*/
+
 public String captureScreenshot(WebDriver webdriver, String testCaseName) throws IOException {
 		Date d = new Date();
 		String FileName = d.toString().replace(":", "_").replace(" ", "_") +testCaseName+ ".png";

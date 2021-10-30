@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-30T18:29:24 IST" name="Surefire suite" finished-at="2021-10-30T18:29:34 IST" duration-ms="9416">
+  <suite started-at="2021-10-31T01:02:28 IST" name="Suite" finished-at="2021-10-31T01:02:51 IST" duration-ms="23216">
     <groups>
     </groups>
-    <test started-at="2021-10-30T18:29:24 IST" name="Surefire test" finished-at="2021-10-30T18:29:34 IST" duration-ms="9416">
-      <class name="Testing.Selenium_Automation.HomePageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@574b560f]" started-at="2021-10-30T18:29:24 IST" name="initialize" finished-at="2021-10-30T18:29:28 IST" duration-ms="4126" status="PASS">
+    <test started-at="2021-10-31T01:02:28 IST" name="Test" finished-at="2021-10-31T01:02:51 IST" duration-ms="23216">
+      <class name="Testing.Selenium_Automation.SigninPageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Testing.Selenium_Automation.SigninPageTest@4d465b11]" started-at="2021-10-31T01:02:33 IST" name="initialize" finished-at="2021-10-31T01:02:35 IST" duration-ms="2027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePage()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@574b560f]" started-at="2021-10-30T18:29:29 IST" name="basePage" finished-at="2021-10-30T18:29:30 IST" duration-ms="1086" status="PASS">
+        <test-method signature="Page()[pri:0, instance:Testing.Selenium_Automation.SigninPageTest@4d465b11]" started-at="2021-10-31T01:02:45 IST" name="Page" finished-at="2021-10-31T01:02:49 IST" duration-ms="4345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Page -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.Selenium_Automation.SigninPageTest@4d465b11]" started-at="2021-10-31T01:02:50 IST" name="teardown" finished-at="2021-10-31T01:02:50 IST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testing.Selenium_Automation.SigninPageTest -->
+      <class name="Testing.Selenium_Automation.HomePageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@3d6f0054]" started-at="2021-10-31T01:02:28 IST" name="initialize" finished-at="2021-10-31T01:02:31 IST" duration-ms="3148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePage()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@3d6f0054]" started-at="2021-10-31T01:02:37 IST" name="basePage" finished-at="2021-10-31T01:02:38 IST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@574b560f]" started-at="2021-10-30T18:29:30 IST" name="teardown" finished-at="2021-10-30T18:29:34 IST" duration-ms="4153" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.Selenium_Automation.HomePageTest@3d6f0054]" started-at="2021-10-31T01:02:49 IST" name="teardown" finished-at="2021-10-31T01:02:50 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Testing.Selenium_Automation.HomePageTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      <class name="Testing.Selenium_Automation.TitleValidationTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Testing.Selenium_Automation.TitleValidationTest@71def8f8]" started-at="2021-10-31T01:02:35 IST" name="initialize" finished-at="2021-10-31T01:02:37 IST" duration-ms="2040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="Page()[pri:0, instance:Testing.Selenium_Automation.TitleValidationTest@71def8f8]" started-at="2021-10-31T01:02:38 IST" name="Page" finished-at="2021-10-31T01:02:41 IST" duration-ms="2763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Page -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.Selenium_Automation.TitleValidationTest@71def8f8]" started-at="2021-10-31T01:02:50 IST" name="teardown" finished-at="2021-10-31T01:02:51 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testing.Selenium_Automation.TitleValidationTest -->
+      <class name="Testing.Selenium_Automation.HomeValidationTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Testing.Selenium_Automation.HomeValidationTest@383bfa16]" started-at="2021-10-31T01:02:31 IST" name="initialize" finished-at="2021-10-31T01:02:33 IST" duration-ms="1930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="Page()[pri:0, instance:Testing.Selenium_Automation.HomeValidationTest@383bfa16]" started-at="2021-10-31T01:02:41 IST" name="Page" finished-at="2021-10-31T01:02:45 IST" duration-ms="3872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Page -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.Selenium_Automation.HomeValidationTest@383bfa16]" started-at="2021-10-31T01:02:50 IST" name="teardown" finished-at="2021-10-31T01:02:50 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testing.Selenium_Automation.HomeValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
